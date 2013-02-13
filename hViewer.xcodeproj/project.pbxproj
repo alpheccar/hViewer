@@ -1,0 +1,332 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		448D9CB116CA1B07008B31DF /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 448D9CB016CA1B07008B31DF /* Cocoa.framework */; };
+		448D9CBB16CA1B07008B31DF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 448D9CB916CA1B07008B31DF /* InfoPlist.strings */; };
+		448D9CBD16CA1B07008B31DF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 448D9CBC16CA1B07008B31DF /* main.m */; };
+		448D9CC116CA1B07008B31DF /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 448D9CBF16CA1B07008B31DF /* Credits.rtf */; };
+		448D9CC416CA1B07008B31DF /* HVAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 448D9CC316CA1B07008B31DF /* HVAppDelegate.m */; };
+		448D9CC716CA1B07008B31DF /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 448D9CC516CA1B07008B31DF /* MainMenu.xib */; };
+		448D9CCE16CA1E71008B31DF /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 448D9CCD16CA1E71008B31DF /* Quartz.framework */; };
+		448D9CD316CA1F53008B31DF /* HaskellConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 448D9CD016CA1F53008B31DF /* HaskellConnection.m */; };
+		448D9CD416CA1F53008B31DF /* HaskellServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 448D9CD216CA1F53008B31DF /* HaskellServer.m */; };
+		44EF22CF16CBD70F003672D4 /* icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 44EF22CE16CBD70F003672D4 /* icon.icns */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		448D9CAD16CA1B07008B31DF /* hViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		448D9CB016CA1B07008B31DF /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		448D9CB316CA1B07008B31DF /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		448D9CB416CA1B07008B31DF /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		448D9CB516CA1B07008B31DF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		448D9CB816CA1B07008B31DF /* hViewer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "hViewer-Info.plist"; sourceTree = "<group>"; };
+		448D9CBA16CA1B07008B31DF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		448D9CBC16CA1B07008B31DF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		448D9CBE16CA1B07008B31DF /* hViewer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "hViewer-Prefix.pch"; sourceTree = "<group>"; };
+		448D9CC016CA1B07008B31DF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		448D9CC216CA1B07008B31DF /* HVAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HVAppDelegate.h; sourceTree = "<group>"; };
+		448D9CC316CA1B07008B31DF /* HVAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HVAppDelegate.m; sourceTree = "<group>"; };
+		448D9CC616CA1B07008B31DF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		448D9CCD16CA1E71008B31DF /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = ../../../../../System/Library/Frameworks/Quartz.framework; sourceTree = "<group>"; };
+		448D9CCF16CA1F53008B31DF /* HaskellConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HaskellConnection.h; sourceTree = "<group>"; };
+		448D9CD016CA1F53008B31DF /* HaskellConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HaskellConnection.m; sourceTree = "<group>"; };
+		448D9CD116CA1F53008B31DF /* HaskellServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HaskellServer.h; sourceTree = "<group>"; };
+		448D9CD216CA1F53008B31DF /* HaskellServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HaskellServer.m; sourceTree = "<group>"; };
+		44EF22CE16CBD70F003672D4 /* icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = icon.icns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		448D9CAA16CA1B07008B31DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				448D9CB116CA1B07008B31DF /* Cocoa.framework in Frameworks */,
+				448D9CCE16CA1E71008B31DF /* Quartz.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		448D9CA416CA1B07008B31DF = {
+			isa = PBXGroup;
+			children = (
+				448D9CB616CA1B07008B31DF /* hViewer */,
+				448D9CAF16CA1B07008B31DF /* Frameworks */,
+				448D9CAE16CA1B07008B31DF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		448D9CAE16CA1B07008B31DF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				448D9CAD16CA1B07008B31DF /* hViewer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		448D9CAF16CA1B07008B31DF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				448D9CB016CA1B07008B31DF /* Cocoa.framework */,
+				448D9CB216CA1B07008B31DF /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		448D9CB216CA1B07008B31DF /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				448D9CCD16CA1E71008B31DF /* Quartz.framework */,
+				448D9CB316CA1B07008B31DF /* AppKit.framework */,
+				448D9CB416CA1B07008B31DF /* CoreData.framework */,
+				448D9CB516CA1B07008B31DF /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		448D9CB616CA1B07008B31DF /* hViewer */ = {
+			isa = PBXGroup;
+			children = (
+				448D9CCF16CA1F53008B31DF /* HaskellConnection.h */,
+				448D9CD016CA1F53008B31DF /* HaskellConnection.m */,
+				448D9CD116CA1F53008B31DF /* HaskellServer.h */,
+				448D9CD216CA1F53008B31DF /* HaskellServer.m */,
+				448D9CC216CA1B07008B31DF /* HVAppDelegate.h */,
+				448D9CC316CA1B07008B31DF /* HVAppDelegate.m */,
+				448D9CC516CA1B07008B31DF /* MainMenu.xib */,
+				448D9CB716CA1B07008B31DF /* Supporting Files */,
+			);
+			path = hViewer;
+			sourceTree = "<group>";
+		};
+		448D9CB716CA1B07008B31DF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				44EF22CE16CBD70F003672D4 /* icon.icns */,
+				448D9CB816CA1B07008B31DF /* hViewer-Info.plist */,
+				448D9CB916CA1B07008B31DF /* InfoPlist.strings */,
+				448D9CBC16CA1B07008B31DF /* main.m */,
+				448D9CBE16CA1B07008B31DF /* hViewer-Prefix.pch */,
+				448D9CBF16CA1B07008B31DF /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		448D9CAC16CA1B07008B31DF /* hViewer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 448D9CCA16CA1B07008B31DF /* Build configuration list for PBXNativeTarget "hViewer" */;
+			buildPhases = (
+				448D9CA916CA1B07008B31DF /* Sources */,
+				448D9CAA16CA1B07008B31DF /* Frameworks */,
+				448D9CAB16CA1B07008B31DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = hViewer;
+			productName = hViewer;
+			productReference = 448D9CAD16CA1B07008B31DF /* hViewer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		448D9CA516CA1B07008B31DF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = HV;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = alpheccar;
+			};
+			buildConfigurationList = 448D9CA816CA1B07008B31DF /* Build configuration list for PBXProject "hViewer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 448D9CA416CA1B07008B31DF;
+			productRefGroup = 448D9CAE16CA1B07008B31DF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				448D9CAC16CA1B07008B31DF /* hViewer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		448D9CAB16CA1B07008B31DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				448D9CBB16CA1B07008B31DF /* InfoPlist.strings in Resources */,
+				448D9CC116CA1B07008B31DF /* Credits.rtf in Resources */,
+				448D9CC716CA1B07008B31DF /* MainMenu.xib in Resources */,
+				44EF22CF16CBD70F003672D4 /* icon.icns in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		448D9CA916CA1B07008B31DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				448D9CBD16CA1B07008B31DF /* main.m in Sources */,
+				448D9CC416CA1B07008B31DF /* HVAppDelegate.m in Sources */,
+				448D9CD316CA1F53008B31DF /* HaskellConnection.m in Sources */,
+				448D9CD416CA1F53008B31DF /* HaskellServer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		448D9CB916CA1B07008B31DF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				448D9CBA16CA1B07008B31DF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		448D9CBF16CA1B07008B31DF /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				448D9CC016CA1B07008B31DF /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		448D9CC516CA1B07008B31DF /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				448D9CC616CA1B07008B31DF /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		448D9CC816CA1B07008B31DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		448D9CC916CA1B07008B31DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		448D9CCB16CA1B07008B31DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "hViewer/hViewer-Prefix.pch";
+				INFOPLIST_FILE = "hViewer/hViewer-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		448D9CCC16CA1B07008B31DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "hViewer/hViewer-Prefix.pch";
+				INFOPLIST_FILE = "hViewer/hViewer-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		448D9CA816CA1B07008B31DF /* Build configuration list for PBXProject "hViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				448D9CC816CA1B07008B31DF /* Debug */,
+				448D9CC916CA1B07008B31DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		448D9CCA16CA1B07008B31DF /* Build configuration list for PBXNativeTarget "hViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				448D9CCB16CA1B07008B31DF /* Debug */,
+				448D9CCC16CA1B07008B31DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 448D9CA516CA1B07008B31DF /* Project object */;
+}
