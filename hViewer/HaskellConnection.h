@@ -5,16 +5,18 @@
 @interface HaskellConnection : NSObject
 
 
-
 - (id)initWithInputStream:(NSInputStream *)inputStream outputStream:(NSOutputStream *)outputStream;
 
 @property (nonatomic, strong, readonly ) NSInputStream *    inputStream;
 @property (nonatomic, strong, readonly ) NSOutputStream *   outputStream;
 @property (nonatomic, strong) NSMutableData *haskellData;
 
+
 - (BOOL)open;
 - (void)close;
 - (NSData*)data;
+-(BOOL)isDisp;
+-(BOOL)isPlay;
 
 
 extern NSString * HaskellConnectionDidCloseNotification;

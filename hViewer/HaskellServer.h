@@ -6,7 +6,8 @@
 
 @protocol HaskellDataDelegate <NSObject>
 @optional
-- (void)didFinishLoadingHaskellData:(NSData*)theData;
+- (void)displayData:(NSData*)theData;
+- (void)playData:(NSData*)theData;
 @end
 
 @interface HaskellServer : NSObject

@@ -54,9 +54,14 @@
     HaskellConnection *connection = [note object];
     assert([connection isKindOfClass:[HaskellConnection class]]);
     id d=self->delegate;
-    if ([d respondsToSelector:@selector(didFinishLoadingHaskellData:)])
+    if ([connection isDisp] && [d respondsToSelector:@selector(displayData:)])
     {
-        [d didFinishLoadingHaskellData:[connection data]];
+        [d displayData:[connection data]];
+    }
+    
+    if ([connection isPlay] && [d respondsToSelector:@selector(playData:)])
+    {
+        [d playData:[connection data]];
     }
 
     [(NSNotificationCenter *)[NSNotificationCenter defaultCenter] removeObserver:self name:HaskellConnectionDidCloseNotification object:connection];

@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4409475B16E341AE002CB9DB /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4409475816E341AE002CB9DB /* AudioToolbox.framework */; };
+		4409475C16E341AE002CB9DB /* AudioUnit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4409475916E341AE002CB9DB /* AudioUnit.framework */; };
+		4409475D16E341AE002CB9DB /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4409475A16E341AE002CB9DB /* CoreAudio.framework */; };
+		4409475F16E341DE002CB9DB /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4409475E16E341DE002CB9DB /* Accelerate.framework */; };
+		4409476116E3AEC5002CB9DB /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4409476016E3AEC5002CB9DB /* AVFoundation.framework */; };
 		448D9CB116CA1B07008B31DF /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 448D9CB016CA1B07008B31DF /* Cocoa.framework */; };
 		448D9CBB16CA1B07008B31DF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 448D9CB916CA1B07008B31DF /* InfoPlist.strings */; };
 		448D9CBD16CA1B07008B31DF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 448D9CBC16CA1B07008B31DF /* main.m */; };
@@ -20,6 +25,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4409475816E341AE002CB9DB /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = ../../../../../System/Library/Frameworks/AudioToolbox.framework; sourceTree = "<group>"; };
+		4409475916E341AE002CB9DB /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = ../../../../../System/Library/Frameworks/AudioUnit.framework; sourceTree = "<group>"; };
+		4409475A16E341AE002CB9DB /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = ../../../../../System/Library/Frameworks/CoreAudio.framework; sourceTree = "<group>"; };
+		4409475E16E341DE002CB9DB /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = ../../../../../System/Library/Frameworks/Accelerate.framework; sourceTree = "<group>"; };
+		4409476016E3AEC5002CB9DB /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = ../../../../../System/Library/Frameworks/AVFoundation.framework; sourceTree = "<group>"; };
 		448D9CAD16CA1B07008B31DF /* hViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		448D9CB016CA1B07008B31DF /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		448D9CB316CA1B07008B31DF /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -48,6 +58,11 @@
 			files = (
 				448D9CB116CA1B07008B31DF /* Cocoa.framework in Frameworks */,
 				448D9CCE16CA1E71008B31DF /* Quartz.framework in Frameworks */,
+				4409475B16E341AE002CB9DB /* AudioToolbox.framework in Frameworks */,
+				4409475C16E341AE002CB9DB /* AudioUnit.framework in Frameworks */,
+				4409475D16E341AE002CB9DB /* CoreAudio.framework in Frameworks */,
+				4409475F16E341DE002CB9DB /* Accelerate.framework in Frameworks */,
+				4409476116E3AEC5002CB9DB /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +98,11 @@
 		448D9CB216CA1B07008B31DF /* Other Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4409476016E3AEC5002CB9DB /* AVFoundation.framework */,
+				4409475E16E341DE002CB9DB /* Accelerate.framework */,
+				4409475816E341AE002CB9DB /* AudioToolbox.framework */,
+				4409475916E341AE002CB9DB /* AudioUnit.framework */,
+				4409475A16E341AE002CB9DB /* CoreAudio.framework */,
 				448D9CCD16CA1E71008B31DF /* Quartz.framework */,
 				448D9CB316CA1B07008B31DF /* AppKit.framework */,
 				448D9CB416CA1B07008B31DF /* CoreData.framework */,

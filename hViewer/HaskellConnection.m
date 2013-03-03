@@ -13,6 +13,10 @@ NSString * HaskellConnectionDidCloseNotification = @"HaskellConnectionDidCloseNo
 @synthesize outputStream = _outputStream;
 @synthesize haskellData;
 
+uint8_t *code;
+short codeToRead;
+
+
 - (id)initWithInputStream:(NSInputStream *)inputStream outputStream:(NSOutputStream *)outputStream
 {
     self = [super init];
@@ -20,9 +24,27 @@ NSString * HaskellConnectionDidCloseNotification = @"HaskellConnectionDidCloseNo
         self->_inputStream = inputStream;
         self->_outputStream = outputStream;
         self->haskellData=[NSMutableData dataWithCapacity:1000];
+        code=malloc(sizeof(uint8_t)*5);
     }
     return self;
 }
+
+- (void)dealloc {
+    free(code);
+}
+
+-(BOOL)isDisp
+{
+    code[4]='\0';
+    return (strcmp(code,"disp")==0);
+}
+
+-(BOOL)isPlay
+{
+    code[4]='\0';
+    return (strcmp(code,"play")==0);
+}
+
 
 - (NSData*)data
 {
@@ -37,6 +59,7 @@ NSString * HaskellConnectionDidCloseNotification = @"HaskellConnectionDidCloseNo
     [self.outputStream scheduleInRunLoop:[NSRunLoop currentRunLoop] forMode:NSDefaultRunLoopMode];
     [self.inputStream  open];
     [self.outputStream open];
+    codeToRead=4;
     return YES;
 }
 
@@ -60,7 +83,23 @@ NSString * HaskellConnectionDidCloseNotification = @"HaskellConnectionDidCloseNo
             NSInteger actuallyRead = [self.inputStream read:(uint8_t *)buffer maxLength:sizeof(buffer)];
             if (actuallyRead > 0)
             {
-                [self->haskellData appendBytes:buffer length:actuallyRead];
+                if (codeToRead > 0)
+                {
+                    short i=0;
+                    short start=codeToRead;
+                    while ((actuallyRead > 0) && (codeToRead > 0))
+                    {
+                        code[i+(4 - start)] = buffer[i];
+                        actuallyRead--;
+                        codeToRead--;
+                        i++;
+                    }
+                    [self->haskellData appendBytes:(buffer+i) length:actuallyRead];
+                }
+                else
+                {
+                   [self->haskellData appendBytes:buffer length:actuallyRead];
+                }
             } else {
                 // A non-positive value from -read:maxLength: indicates either end of file (0) or 
                 // an error (-1).  In either case we just wait for the corresponding stream event 

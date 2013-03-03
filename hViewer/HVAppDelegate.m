@@ -1,8 +1,7 @@
 #import "HVAppDelegate.h"
-
 @implementation HVAppDelegate
 
-@synthesize pdfView,window,server;
+@synthesize pdfView,window,server,audioPlayer;
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
@@ -16,10 +15,45 @@
     
 }
 
--(void)didFinishLoadingHaskellData:(NSData*)theData
+- (void)audioPlayerDidFinishPlaying:(AVAudioPlayer *)player successfully:(BOOL)flag
+{
+    if (!flag)
+    {
+        NSLog(@"Error decoding\n");
+    }
+    self.audioPlayer=nil;
+}
+
+- (void)audioPlayerDecodeErrorDidOccur:(AVAudioPlayer *)player error:(NSError *)error
+{
+    NSLog(@"%@", [error localizedDescription]);
+    self.audioPlayer=nil;
+}
+
+-(void)displayData:(NSData *)theData
 {
     PDFDocument *pdf=[[PDFDocument alloc] initWithData:theData];
     [self->pdfView setDocument:pdf];
+}
+
+-(void)playData:(NSData *)theData
+{
+    NSError* error = nil;
+    if (self.audioPlayer)
+    {
+        [self.audioPlayer stop];
+    }
+    self.audioPlayer=[[AVAudioPlayer alloc] initWithData: theData error:&error];
+    if (!self.audioPlayer)
+    {
+        NSLog(@"%@", [error localizedDescription]);
+    }
+    else
+    {
+      self.audioPlayer.delegate=self;
+
+      [self.audioPlayer play];
+    }
 }
 
 - (IBAction)saveDocument:(id)sender
